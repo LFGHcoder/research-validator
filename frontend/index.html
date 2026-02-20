@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Validator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Research Validator</h1>
+      <p>Paste your text and get factual confidence scores powered by your FastAPI backend.</p>
+    </header>
+
+    <main class="app-main">
+      <section class="input-card">
+        <div class="field">
+          <label for="api-url">API URL</label>
+          <input
+            id="api-url"
+            type="text"
+            value="http://127.0.0.1:8000/validate"
+          />
+          <small>Change this if your backend runs on a different host/port.</small>
+        </div>
+
+        <div class="field">
+          <label for="text-input">Research Text</label>
+          <textarea
+            id="text-input"
+            rows="6"
+            placeholder="Example: The Eiffel Tower is located in Paris. It was built in 1889."
+          ></textarea>
+        </div>
+
+        <button id="validate-btn" class="primary-btn">
+          Validate Claims
+        </button>
+
+        <p id="status" class="status"></p>
+      </section>
+
+      <section class="results-card">
+        <h2>Results</h2>
+        <div id="results-summary" class="results-summary"></div>
+        <div id="results-list" class="results-list"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Hackathon-ready prototype • Backend: FastAPI • Frontend: Vanilla JS</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

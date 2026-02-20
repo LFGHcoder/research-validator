@@ -1,0 +1,10 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+openai==1.12.0
+google-generativeai==0.3.2
+numpy==1.26.3
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Note: OpenAI, Gemini, and numpy are optional - only needed for embeddings
+# The API will work with just YOU_API_KEY using text-based similarity fallback
