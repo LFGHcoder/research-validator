@@ -57,7 +57,6 @@ Or double-click `run.bat`
 ```bash
 uvicorn main:app --reload
 ```
-Or double-click `run_reload.bat`
 
 **Linux/Mac:**
 ```bash
